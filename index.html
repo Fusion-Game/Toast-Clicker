@@ -15,15 +15,13 @@
   </style>
 <!-----------------------JS FUNCTIONS--------------------->
   <script>
-    function breadClicked() {
-     let crumbs += let cpc;
-      updateDisplay();
-    }
-   updateDisplay(); // Initial display
     function updateDisplay() {
   const displayElement = document.getElementById("variable-value");
-  displayElement.textContent = myVariable;
-}
+  displayElement.textContent = crumbs;
+    
+    function breadClicked() {
+     let crumbs += let cpc;
+    }
   </script>
 <!------------–---------JS VARIABLES---------------------->
   <script>
@@ -33,8 +31,8 @@
 </head>
 <!----------------------CODE------------------------------------>
 <body>
-  <p id="variable-value"></p>
+  <p class="counter" id="variable-value" style="font-family: Rockwell; text-align: center;"></p>
   <div>
-  <img onclick="breadClicked()" class="bread" src="ASSETS/IMG_2015-removebg-preview.png">
+    
   </div>
 </body>
