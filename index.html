@@ -17,7 +17,13 @@
   <script>
     function breadClicked() {
       crumbs += cpc;
+      updateDisplay();
     }
+   updateDisplay(); // Initial display
+    function updateDisplay() {
+  const displayElement = document.getElementById("variable-value");
+  displayElement.textContent = myVariable;
+}
   </script>
 <!------------–---------JS VARIABLES---------------------->
   <script>
@@ -27,5 +33,8 @@
 </head>
 <!----------------------CODE------------------------------------>
 <body>
+  <p id="variable-value"></p>
+  <div>
   <img onclick="breadClicked()" class="bread" src="ASSETS/IMG_2015-removebg-preview.png">
+  </div>
 </body>
